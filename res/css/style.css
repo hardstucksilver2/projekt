@@ -1,0 +1,22 @@
+#cookie {
+    
+    width: 100%;
+    width: 400px;
+transition: .3s ease ;
+    
+
+    
+
+    
+}
+html{background-image: url("../img/background.jfif") ;
+background-size: cover;
+
+
+}
+
+.center{text-align: center;
+margin-top: 7%;}
+#counter{font-family: 'Kalam', cursive;
+font-size: xx-large;}
+
