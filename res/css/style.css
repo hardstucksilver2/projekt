@@ -20,3 +20,12 @@ margin-top: 7%;}
 #counter{font-family: 'Kalam', cursive;
 font-size: xx-large;}
 
+#clickupgrade{
+    font-family: 'Kalam', cursive;
+    padding: 1em;
+    font-size: x-large;
+    background-color: rgb(110, 51, 165);
+}
+
+
+
