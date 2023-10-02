@@ -9,7 +9,7 @@ transition: .3s ease ;
 
     
 }
-html{background-image: url("../img/background.jfif") ;
+html{background-image: url("../img/download\ \(9\).jpg") ;
 background-size: cover;
 
 
@@ -20,7 +20,22 @@ margin-top: 7%;}
 #counter{font-family: 'Kalam', cursive;
 font-size: xx-large;}
 
-#clickupgrade{
+#clickupgrade {
+    font-family: 'Kalam', cursive;
+    padding: 1em;
+    font-size: x-large;
+    background-color: rgb(110, 51, 165);
+}
+
+#clickupgrade2{
+    font-family: 'Kalam', cursive;
+    padding: 1em;
+    font-size: x-large;
+    background-color: rgb(110, 51, 165);
+}
+h1{font-family: 'Kalam', cursive;
+text-align: center;}
+#clickupgrade3{
     font-family: 'Kalam', cursive;
     padding: 1em;
     font-size: x-large;
