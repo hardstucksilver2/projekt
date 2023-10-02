@@ -9,7 +9,8 @@ transition: .3s ease ;
 
     
 }
-html{background-image: url("../img/download\ \(9\).jpg") ;
+html{background-image: url(../img/download\ \(9\).jpg)
+    ;
 background-size: cover;
 
 
