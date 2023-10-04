@@ -1,3 +1,7 @@
+
+
+*{user-select: none;}
+
 #cookie {
     
     width: 100%;
@@ -47,5 +51,14 @@ text-align: center;}
     font-size: x-large;
     background-color: rgb(110, 51, 165);}
 
+    .upgradeImg{
+        max-width: 80px;
+        width: 100%;
+    }
+
+    #clickupgradeWrapper{border: 10px soid black;
+    display: flex;
+width: 50%;
+;}
 
 

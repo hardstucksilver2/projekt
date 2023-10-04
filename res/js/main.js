@@ -32,7 +32,7 @@ clickupgrade.onclick = () => {
         numberOfCookies -= upgradeprize;
         counter.innerText = "Kills: " + numberOfCookies;
         upgradeprize+=100
-        clickupgrade.innerText= "Double kill upgrade: " + upgradeprize
+        clickupgrade.innerText= "Upgrade(+1 per click): " + upgradeprize
         clickIncrease++;
         
         
@@ -47,9 +47,9 @@ clickupgrade2.onclick = () => {
         numberOfCookies -= upgradeprize2;
         counter.innerText = "Kills: " + numberOfCookies;
         upgradeprize2+= 200
-        clickupgrade2.innerText= "Triple kill upgrade: " + upgradeprize2;
+        clickupgrade2.innerText= "Upgrade(+2 per click):  " + upgradeprize2;
         
-        clickIncrease = clickIncrease + 2;
+        clickIncrease = clickIncrease + 1;
         clickIncrease++;
     }
 
@@ -62,10 +62,10 @@ clickupgrade3.onclick = () => {
         numberOfCookies -= upgradeprize3;
         counter.innerText = "Kills: " + numberOfCookies;
         upgradeprize3+=300
-        clickupgrade3.innerText= "Triple kill upgrade: " + upgradeprize3;
+        clickupgrade3.innerText= "Upgrade(+3 per click):  " + upgradeprize3;
         
         
-        clickIncrease = clickIncrease + 3;
+        clickIncrease = clickIncrease + 2;
         clickIncrease++;
     }
 
@@ -76,7 +76,7 @@ autoclickbutton1.onclick = () => {
         numberOfCookies -= autoclickerprize;
         counter.innerText = "Kills: " + numberOfCookies;
         autoclickerprize+=100
-        autoclickbutton1.innerText= "Triple kill upgrade: " + autoclickerprize;
+        autoclickbutton1.innerText= "Auto click upgrade: " + autoclickerprize;
         autoClickIncrease++;
         clearInterval(autoclicker)
         autoclicker=setInterval(() => {
