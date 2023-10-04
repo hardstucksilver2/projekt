@@ -32,7 +32,7 @@ clickupgrade.onclick = () => {
         numberOfCookies -= upgradeprize;
         counter.innerText = "Kills: " + numberOfCookies;
         upgradeprize+=100
-        clickupgrade.innerText= "Double kill upgrade:" + upgradeprize
+        clickupgrade.innerText= "Double kill upgrade: " + upgradeprize
         clickIncrease++;
         
         
