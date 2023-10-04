@@ -3,10 +3,17 @@ const counter = document.getElementById("counter");
 const clickupgrade = document.getElementById("clickupgrade");
 const clickupgrade2 = document.getElementById("clickupgrade2");
 const clickupgrade3 = document.getElementById("clickupgrade3");
-
+const autoclickbutton1 = document.getElementById("autoclickbutton1")
 let numberOfCookies = 0;
 let clickIncrease = 1;
-let clickIncrease2 = 2;
+
+
+let autoClickIncrease=0;
+let autoclicker;
+let upgradeprize= 100;
+let upgradeprize2= 200;
+let upgradeprize3= 500;
+let autoclickerprize= 100;
 // {} - scope
 cookie.onclick = () => {
     //numberOfCookies = numberOfCookies + 1;
@@ -20,23 +27,28 @@ cookie.onclick = () => {
 clickupgrade.onclick = () => {
 
 
-    if (numberOfCookies >= 50) {
+    if (numberOfCookies >= upgradeprize) {
         //odectu susenky
-        numberOfCookies -= 50;
+        numberOfCookies -= upgradeprize;
         counter.innerText = "Kills: " + numberOfCookies;
+        upgradeprize+=100
+        clickupgrade.innerText= "Double kill upgrade:" + upgradeprize
         clickIncrease++;
+        
+        
     }
 };
 
 clickupgrade2.onclick = () => {
 
 
-    if (numberOfCookies >= 200) {
+    if (numberOfCookies >= upgradeprize2) {
         //odectu susenky
-        numberOfCookies -= 200;
+        numberOfCookies -= upgradeprize2;
         counter.innerText = "Kills: " + numberOfCookies;
-
-        numberOfCookies = numberOfCookies;
+        upgradeprize2+= 200
+        clickupgrade2.innerText= "Triple kill upgrade: " + upgradeprize2;
+        
         clickIncrease = clickIncrease + 2;
         clickIncrease++;
     }
@@ -45,15 +57,44 @@ clickupgrade2.onclick = () => {
 clickupgrade3.onclick = () => {
 
 
-    if (numberOfCookies >= 500) {
+    if (numberOfCookies >= upgradeprize3) {
         //odectu susenky
-        numberOfCookies -= 500;
+        numberOfCookies -= upgradeprize3;
         counter.innerText = "Kills: " + numberOfCookies;
-
-        numberOfCookies = numberOfCookies;
+        upgradeprize3+=300
+        clickupgrade3.innerText= "Triple kill upgrade: " + upgradeprize3;
+        
+        
         clickIncrease = clickIncrease + 3;
         clickIncrease++;
     }
 
 };
 
+autoclickbutton1.onclick = () => {
+    if (numberOfCookies >= autoclickerprize) {
+        numberOfCookies -= autoclickerprize;
+        counter.innerText = "Kills: " + numberOfCookies;
+        autoclickerprize+=100
+        autoclickbutton1.innerText= "Triple kill upgrade: " + autoclickerprize;
+        autoClickIncrease++;
+        clearInterval(autoclicker)
+        autoclicker=setInterval(() => {
+            numberOfCookies+= autoClickIncrease;
+            counter.innerText = "Kills: " + numberOfCookies;
+        }, 1000);
+    }
+
+}
+
+const turnOnCheats= () => {
+    numberOfCookies=1000000;
+    counter.innerText = "Kills: " + numberOfCookies;
+}
+turnOnCheats()
+function turnOnsuperCheats() {
+
+    numberOfCookies=1000000000;
+    counter.innerText = "Kills: " + numberOfCookies;
+}
+turnOnsuperCheats();
