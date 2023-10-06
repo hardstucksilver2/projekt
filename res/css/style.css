@@ -1,6 +1,9 @@
 
 
-*{user-select: none;}
+*{user-select: none;
+cursor: url(../img/cursor.png), default;
+
+}
 
 #cookie {
     
@@ -9,10 +12,14 @@
 transition: .3s ease ;
     
 
-    
-
-    
 }
+    
+.kontejner{
+text-align: center;}
+    
+body{background-size: cover;
+    background-image: url(../img/download\ \(9\).jpg)
+    ;}
 html{background-image: url(../img/download\ \(9\).jpg)
     ;
 background-size: cover;
@@ -31,12 +38,26 @@ font-size: xx-large;}
     font-size: x-large;
     background-color: rgb(110, 51, 165);
 }
+#clickupgrade:hover{
+    font-size: xx-large;
+transition: 0.5s ease;}
+#clickupgrade2:hover{
+    font-size: xx-large;
+transition: 0.5s ease;}
+#clickupgrade3:hover{
+    font-size: xx-large;
+transition: 0.5s ease;}
+#autoclickbutton1:hover{
+    font-size: xx-large;
+transition: 0.5s ease;}
 
 #clickupgrade2{
     font-family: 'Kalam', cursive;
     padding: 1em;
     font-size: x-large;
     background-color: rgb(110, 51, 165);
+   
+    margin-top: 50px;
 }
 h1{font-family: 'Kalam', cursive;
 text-align: center;}
@@ -45,6 +66,7 @@ text-align: center;}
     padding: 1em;
     font-size: x-large;
     background-color: rgb(110, 51, 165);
+    margin-top: 50px;
 }
 #autoclickbutton1{font-family: 'Kalam', cursive;
     padding: 1em;
@@ -52,13 +74,25 @@ text-align: center;}
     background-color: rgb(110, 51, 165);}
 
     .upgradeImg{
-        max-width: 80px;
-        width: 100%;
+    max-width: 100px;
+    
+      
+      
     }
 
-    #clickupgradeWrapper{border: 10px soid black;
-    display: flex;
-width: 50%;
-;}
+  
+    
+
+
+button{
+max-width: 500px;
+
+}
+.radek{
+
+
+
+
+border: 1px solid rgb(255, 255, 255);}
 
 

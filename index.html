@@ -6,29 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kukiklikr</title>
     <link rel="stylesheet" href="./res/css/style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
     </style>
 </head>
 
 <body>
-    <h1> Vítejte ve vyvolávačově žlebu</h1>
-    <div class="center"> <img id="cookie" src="./res/img/samira.jfif" alt="Cookie">
+    <div class="kontejner">
+        <h1> Vítejte ve vyvolávačově žlebu</h1>
+        <img id="cookie" src="./res/img/samira.jfif" alt="Cookie">
         <p id="counter">Kills: 0</p>
-        <div id="clickupgradeWrapper">
 
-            <img class="upgradeImg" src="./res/img/cursor.jfif">
-        </div>
-        <div>
-            <h1>Click upgrades</h1>
+
+
+
+
+
+        <div class="col-md-12"> <img class="upgradeImg" src="./res/img/upgrades.jpg">
             <button id="clickupgrade">Upgrade(+1 per click): 100 </button>
-            <button id="clickupgrade2">Upgrade(+2 per click):  200 </button>
-            <button id="clickupgrade3">|Upgrade(+3 per click):  500 </button>
+        </div>
+        <div class="col-md-12"><img class="upgradeImg" src="./res/img/upgrades.jpg"> <button id="clickupgrade2">Upgrade(+2
+                per click): 200 </button></div>
+        <div class="col-md-12 "><img class="upgradeImg" src="./res/img/upgrades.jpg"> <button id="clickupgrade3">Upgrade(+3
+                per click): 500 </button>
         </div>
         <h1>Auto click upgrades</h1><button id="autoclickbutton1">Auto click upgrade: 100
         </button>
-        <br><br><br><br><br><br><br>
     </div>
+
     <script src="./res/js/main.js"></script>
 
 </body>
