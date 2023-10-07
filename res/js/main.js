@@ -87,7 +87,7 @@ autoclickbutton1.onclick = () => {
 
 }
 
-const turnOnCheats= () => {
+/*const turnOnCheats= () => {
     numberOfCookies=1000000;
     counter.innerText = "Vráťovi plácačky: " + numberOfCookies;
 }
@@ -97,4 +97,4 @@ function turnOnsuperCheats() {
     numberOfCookies=1000000000;
     counter.innerText = "Vráťovi plácačky: " + numberOfCookies;
 }
-turnOnsuperCheats();
+turnOnsuperCheats();*/
