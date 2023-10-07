@@ -2,6 +2,7 @@
 
 *{user-select: none;
 cursor: url(../img/cursor.png), default;
+color: white;
 
 }
 
@@ -9,22 +10,26 @@ cursor: url(../img/cursor.png), default;
     
     width: 100%;
     width: 400px;
-transition: .3s ease ;
+height: 250px;
     
 
 }
+#cookie:hover{
+    width: 450px;
+    height: 300px;
+    transition: 0.5s ease;
+}
+
     
 .kontejner{
 text-align: center;}
     
 body{background-size: cover;
-    background-image: url(../img/download\ \(9\).jpg)
-    ;}
-html{background-image: url(../img/download\ \(9\).jpg)
+    background-image: url(../img/pozadi.jpeg)
     ;
-background-size: cover;
-
-
+    background-attachment: fixed;
+   
+    
 }
 
 .center{text-align: center;
@@ -36,48 +41,51 @@ font-size: xx-large;}
     font-family: 'Kalam', cursive;
     padding: 1em;
     font-size: x-large;
-    background-color: rgb(110, 51, 165);
+    background-color: rgb(134, 133, 216);
+   border: none;
+   color: black;
 }
-#clickupgrade:hover{
-    font-size: xx-large;
+.radek:hover{
+    height: 150px;
+    width: 550px;
+   
 transition: 0.5s ease;}
-#clickupgrade2:hover{
-    font-size: xx-large;
-transition: 0.5s ease;}
-#clickupgrade3:hover{
-    font-size: xx-large;
-transition: 0.5s ease;}
-#autoclickbutton1:hover{
-    font-size: xx-large;
-transition: 0.5s ease;}
+
+
 
 #clickupgrade2{
     font-family: 'Kalam', cursive;
     padding: 1em;
     font-size: x-large;
-    background-color: rgb(110, 51, 165);
-   
-    margin-top: 50px;
+    background-color: rgb(134, 133, 216);
+    border: none;
+    color: black;
+    
 }
 h1{font-family: 'Kalam', cursive;
-text-align: center;}
+text-align: center;
+color: white;}
 #clickupgrade3{
     font-family: 'Kalam', cursive;
     padding: 1em;
     font-size: x-large;
-    background-color: rgb(110, 51, 165);
-    margin-top: 50px;
+    background-color: rgb(134, 133, 216);
+    border: none;
+    color: black;
 }
 #autoclickbutton1{font-family: 'Kalam', cursive;
     padding: 1em;
     font-size: x-large;
-    background-color: rgb(110, 51, 165);}
+    background-color: rgb(134, 133, 216);
+    border: none;
+    color: black;
+}
 
     .upgradeImg{
-    max-width: 100px;
+   
     
-      
-      
+      height: auto;
+      width: auto;
     }
 
   
@@ -89,10 +97,19 @@ max-width: 500px;
 
 }
 .radek{
+font-size: auto;
+
+display: flex;
+flex-direction: row;
+width: 500px;
+margin: auto;
+height: 100px;
+margin-top: 50px;
+border: 1px black solid;
+background-color: rgb(134, 133, 216);
+margin-bottom: 20px;
+}
 
 
-
-
-border: 1px solid rgb(255, 255, 255);}
 
 
