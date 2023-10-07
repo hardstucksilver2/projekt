@@ -1,7 +1,7 @@
 
 
 *{user-select: none;
-cursor: url(../img/cursor.png), default;
+
 color: white;
 
 }
@@ -45,11 +45,7 @@ font-size: xx-large;}
    border: none;
    color: black;
 }
-.radek:hover{
-    height: 150px;
-    width: 550px;
-   
-transition: 0.5s ease;}
+
 
 
 
@@ -80,6 +76,12 @@ color: white;}
     border: none;
     color: black;
 }
+#autoclickbutton2{font-family: 'Kalam', cursive;
+    padding: 1em;
+    font-size: x-large;
+    background-color: rgb(134, 133, 216);
+    border: none;
+    color: black;}
 
     .upgradeImg{
    
@@ -110,6 +112,55 @@ background-color: rgb(134, 133, 216);
 margin-bottom: 20px;
 }
 
+#radek1{font-size: auto;
 
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin: auto;
+    height: 100px;
+    margin-top: 50px;
+    border: 1px black solid;
+    background-color: rgb(134, 133, 216);
+    margin-bottom: 20px;}
 
+    #radek1:hover{
+        height: 150px;
+        width: 550px;
+       
+    transition: 0.5s ease;}
 
+    #radek1, #radek2, #radek3, #radek4{font-size: auto;
+
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        margin: auto;
+        height: 100px;
+        margin-top: 50px;
+        border: 1px black solid;
+        background-color: rgb(134, 133, 216);
+        margin-bottom: 20px;
+    cursor:pointer ;}
+    
+        #radek1:hover{
+            height: 150px;
+            width: 550px;
+           
+        transition: 0.5s ease;}
+        #radek2:hover{
+            height: 150px;
+            width: 550px;
+           
+        transition: 0.5s ease;}
+        #radek3:hover{
+            height: 150px;
+            width: 550px;
+           
+        transition: 0.5s ease;}
+        #radek4:hover{
+            height: 150px;
+            width: 550px;
+           
+        transition: 0.5s ease;}
+        

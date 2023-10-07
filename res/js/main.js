@@ -1,9 +1,10 @@
 const cookie = document.getElementById("cookie");
 const counter = document.getElementById("counter");
-const clickupgrade = document.getElementById("clickupgrade");
-const clickupgrade2 = document.getElementById("clickupgrade2");
-const clickupgrade3 = document.getElementById("clickupgrade3");
-const autoclickbutton1 = document.getElementById("autoclickbutton1")
+const radek1 = document.getElementById("radek1");
+const radek2 = document.getElementById("radek2");
+const radek3 = document.getElementById("radek3");
+const radek4 = document.getElementById("radek4")
+
 let numberOfCookies = 0;
 let clickIncrease = 1;
 
@@ -24,7 +25,7 @@ cookie.onclick = () => {
     counter.innerText = "Vráťovi plácačky: " + numberOfCookies;
 }
 
-clickupgrade.onclick = () => {
+radek1.onclick = () => {
 
 
     if (numberOfCookies >= upgradeprize) {
@@ -39,7 +40,7 @@ clickupgrade.onclick = () => {
     }
 };
 
-clickupgrade2.onclick = () => {
+radek2.onclick = () => {
 
 
     if (numberOfCookies >= upgradeprize2) {
@@ -54,7 +55,7 @@ clickupgrade2.onclick = () => {
     }
 
 };
-clickupgrade3.onclick = () => {
+radek3.onclick = () => {
 
 
     if (numberOfCookies >= upgradeprize3) {
@@ -71,7 +72,22 @@ clickupgrade3.onclick = () => {
 
 };
 
-autoclickbutton1.onclick = () => {
+radek4.onclick = () => {
+    if (numberOfCookies >= autoclickerprize) {
+        numberOfCookies -= autoclickerprize;
+        counter.innerText = "Vráťovi plácačky: " + numberOfCookies;
+        autoclickerprize+=100
+        autoclickbutton1.innerText= "Plácaček(+1 za sekundu): " + autoclickerprize;
+        autoClickIncrease++;
+        clearInterval(autoclicker)
+        autoclicker=setInterval(() => {
+            numberOfCookies+= autoClickIncrease;
+            counter.innerText = "Vráťovi plácačky: " + numberOfCookies;
+        }, 1000);
+    }
+
+}
+autoclickbutton2.onclick = () => {
     if (numberOfCookies >= autoclickerprize) {
         numberOfCookies -= autoclickerprize;
         counter.innerText = "Vráťovi plácačky: " + numberOfCookies;
@@ -87,7 +103,7 @@ autoclickbutton1.onclick = () => {
 
 }
 
-/*const turnOnCheats= () => {
+const turnOnCheats= () => {
     numberOfCookies=1000000;
     counter.innerText = "Vráťovi plácačky: " + numberOfCookies;
 }
@@ -97,4 +113,4 @@ function turnOnsuperCheats() {
     numberOfCookies=1000000000;
     counter.innerText = "Vráťovi plácačky: " + numberOfCookies;
 }
-turnOnsuperCheats();*/
+turnOnsuperCheats();
