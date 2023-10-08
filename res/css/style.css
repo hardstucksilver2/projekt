@@ -141,7 +141,7 @@ margin-bottom: 20px;
         border: 1px black solid;
         background-color: rgb(134, 133, 216);
         margin-bottom: 20px;
-    cursor:pointer ;}
+        cursor: url(../img/cursor.png), auto;
     
         #radek1:hover{
             height: 150px;
