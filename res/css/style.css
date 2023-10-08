@@ -5,6 +5,7 @@
 color: white;
 
 }
+body{cursor: url(../img/cursor.png), auto;}
 
 #cookie {
     
@@ -14,6 +15,7 @@ height: 250px;
     
 
 }
+button{cursor: url(../img/cursor.png), auto;}
 #cookie:hover{
     width: 450px;
     height: 300px;
@@ -140,8 +142,10 @@ margin-bottom: 20px;
         margin-top: 50px;
         border: 1px black solid;
         background-color: rgb(134, 133, 216);
-        margin-bottom: 20px;
-        cursor: url(../img/cursor.png), auto;
+        margin-bottom: 50px;
+        cursor: pointer;
+       
+    }
     
         #radek1:hover{
             height: 150px;
@@ -163,4 +167,5 @@ margin-bottom: 20px;
             width: 550px;
            
         transition: 0.5s ease;}
+        
         
